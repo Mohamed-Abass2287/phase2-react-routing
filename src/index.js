@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import About from './components/About';
 import ErrorPage from './components/ErrorPage';
 import PostForm from './components/PostForm';
+import SinglePost from './components/SinglePost';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: "/add-post",
     element: <PostForm />
+  },
+  {
+    path: "/posts/:id",
+    element: <SinglePost />
   }
 ])
 
